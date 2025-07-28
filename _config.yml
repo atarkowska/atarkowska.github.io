@@ -4,4 +4,49 @@ plugins:
 
 author: Aleksandra Tarkowska, MSc Eng
 title: Unlock Tomorrow with Lifelong Learning
-description: Technology Development Engineer
+description: My name is Aleksandra Tarkowska and I am a Technology Development Engineer helping individuals stay ahead of emerging skills gaps and succeed in a dynamic world. With deep analytical mindset and over a decade of technical expertise fostering innovation, I'm here to guide you through your journey into modern technology, supporting you every step of the way.
+
+
+badges:
+  -
+    name: "Professional Certification: Level 1 - Certified Solution Architect"
+    link: "https://www.credly.com/badges/850ba155-4da7-4ee6-a283-6242a46b209c"
+    img:  "https://images.credly.com/images/5f0b34f7-d488-4e8c-8a1d-e87e3adfcefe/badge-openca-certified.png"
+  -
+    name: "Enterprise Design Thinking Practitioner"
+    link: "https://www.credly.com/badges/5e190d54-952f-4fe7-b884-ade00cc259f6"
+    img:  "https://images.credly.com/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07_Practitioner.png"
+  -
+    name: "Power BI Bootcamp"
+    link: "https://www.credly.com/badges/82abbe94-1f4c-4e9f-ba10-35b48a70b684"
+    img:  "https://images.credly.com/images/3c356de9-4cca-4888-ab08-557f43b8b7e0/2e12f7aa-d50c-4b7e-8cb2-d020c917c0f8.png"
+  -
+    name: "MCP for Software Engineers"
+    link: "https://www.credly.com/badges/8fc69c51-55eb-4d9d-b4c4-bb8078c27242"
+    img:  "https://images.credly.com/images/07a745e3-5f61-4311-8a0e-5a49e740370e/d1cf66c6-6bd1-47d1-8e49-a236df9a9681.png"
+  -
+    name: "Python"
+    link: "https://www.credly.com/badges/10996d6e-7118-40db-a042-8766aa4bf4b5"
+    img:  "https://images.credly.com/size/110x110/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png"
+  -
+    name: "Python"
+    link: "https://www.credly.com/badges/b090597d-6374-4afb-a259-33b85a138342"
+    img:  "https://images.credly.com/images/3f802526-7274-4230-91ab-f6d1a35340e6/image.png"
+  -
+    name: "TeamOps Practitioner Certification"
+    link: "https://www.credly.com/badges/158be7ec-25e7-46ad-bd93-4b0460a9177e"
+    img:  "https://images.credly.com/images/830f779b-9473-47b8-895f-33fa2d4c502e/image.png"
+  -
+    name: "GitLab Certified Project Management Associate"
+    link: "https://www.credly.com/badges/0d3e7e61-b3dd-4b0f-89a7-ab148f14e65e"
+    img:  "https://images.credly.com/images/5e4e8c17-c19c-4005-b5b5-9bc81bfdbeac/image.png"
+  -
+    name: "GitLab Certified Git Associate"
+    link: "https://www.credly.com/badges/299cefcf-94f4-4db9-8347-f80af3c5cf73"
+    img:  "https://images.credly.com/images/9bc216e6-406e-491f-903f-2f7ca60facc6/image.png"
+  -
+    name: "Barclays Digital Credential Champion"
+    link: "https://www.credential.net/57d72908-3448-40a9-97e0-b779f603e563?username=aleksandratarkowska975124"
+    img:  "https://accredible_temp_credential_images.s3-external-1.amazonaws.com/17537047041129876528037617018653.PNG?cb=1753704705993"
+           
+

@@ -103,7 +103,12 @@
     <div class="container">
       <div class="row text-lead">
         <div class="col-sm-12 col-md-8 offset-md-2 text-center pb-5">
-          <p class="text-lead">{{ content }}</p>
+          <h3 class="pt-4">About</h3>
+          <p class="text-lead">{{ site.description }}</p>
+          
+          {% for item in site.badges %}
+          <a href="{{ item.link }}"><img style="height: 100px;" src="{{ item.img }}"></a>
+          {% endfor %}
         </div>
       </div>
     </div>
