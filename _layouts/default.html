@@ -1,83 +1,100 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: " en-US" }}">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
 
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ description }}">
-    <meta name="author" content="{{ author }}">
-    
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/bstyle.css?v=' | append: site.github.build_revision | relative_url }}">
-    
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    
-{% seo %}
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="{{ author }}">
+
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.png' }}">
+
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+
 </head>
-  <body>
 
-    <!-- HEADER -->
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-main bg-gradient">
-    </nav>
+  <!-- HEADER -->
 
-    <div class="data bg-gradient">
-      <div class="container content">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Unlock Tomorrow<br>with Lifelong Learning</h1>
-            <br>
-            <p class="pt-4">Are you ready to transform your life through the power of learning? Technology is changing the way people learn, work, and connect. Together we can stay ahead of emerging skills gaps and succeed in a dynamic world.</p>
-          </div>
-          <div class="col-md-6 text-center image d-none d-lg-block d-md-block">
-            <img style="height: 300px;" viewbox="0 0 974.07 840.06" class="injected-svg modal__media modal__lg_media" src="/assets/images/clones-640.png">
-          </div>
+  {%- include nav.html -%}
+
+
+  <div class="data bg-gradient">
+    <div class="container content">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Unlock Tomorrow<br>with Lifelong Learning</h1>
+          <br>
+          <p class="pt-4">Are you ready to transform your life through the power of learning? Technology is changing the
+            way people learn, work, and connect. Together we can stay ahead of emerging skills gaps and succeed in a
+            dynamic world.</p>
+        </div>
+        <div class="col-md-6 text-center image d-none d-lg-block d-md-block">
+          <img style="height: 300px;" viewbox="0 0 974.07 840.06" class="injected-svg modal__media modal__lg_media"
+            src="/assets/images/clones-640.png">
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <section class="intro" id="process">
+  <!-- MAIN CONTENT -->
+  <section class="intro" id="process">
     <div class="container">
       <div class="row">
         <div class="col-md-4 text-center col-sm-12 pb-5 pb-sm-0">
-            
+
           <div class="icon bg-gradient">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-              <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+              <path
+                d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
             </svg>
           </div>
           <h3 class="pt-4">Continuous Learning</h3>
-          <p class="text-lead">Understanding what AI is, exploring its services and technologies, embracing responsible AI practices, and discovering how you and your organization can effectively implement AI solutions and beyond.</p>
+          <p class="text-lead">Understanding what AI is, exploring its services and technologies, embracing responsible
+            AI practices, and discovering how you and your organization can effectively implement AI solutions and
+            beyond.</p>
         </div>
-       
+
         <div class="col-md-4 text-center col-sm-12 pb-sm-0">
           <div class="icon bg-gradient">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"></path>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"></path>
+              <path
+                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0">
+              </path>
+              <path
+                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z">
+              </path>
             </svg>
           </div>
           <h3 class="pt-4">Technological Innovation</h3>
-          <p class="text-lead">Implement innovative technological solutions that streamline workflows and enhance productivity, empowering organisations to thrive in a dynamic landscape.</p>
+          <p class="text-lead">Implement innovative technological solutions that streamline workflows and enhance
+            productivity, empowering organisations to thrive in a dynamic landscape.</p>
         </div>
 
         <div class="col-md-4 text-center col-sm-12 pb-5 pb-sm-0">
           <div class="icon bg-gradient">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
-              <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"></path>
+              <path
+                d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5">
+              </path>
               <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
             </svg>
           </div>
           <h3 class="pt-4">Collaborative Connections</h3>
-          <p class="text-lead">Facilitate collaborative opportunities and networking through technology, enabling individuals and teams to share knowledge, ideas, and resources for mutual growth and success.</p>
+          <p class="text-lead">Facilitate collaborative opportunities and networking through technology, enabling
+            individuals and teams to share knowledge, ideas, and resources for mutual growth and success.</p>
         </div>
-        
+
       </div>
     </div>
   </section>
@@ -103,9 +120,9 @@
     </div>
   </footer>
 
-<script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+  <script src="{{ '/assets/js/scale.fix.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 
-<script src="{{ '/assets/js/bootstrap.bundle.js?v=' | append: site.github.build_revision | relative_url }}></script>
-    
+  <script src="{{ '/assets/js/bootstrap.bundle.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+
   </body>
 </html>
