@@ -106,9 +106,16 @@
           <h3 class="pt-4">About</h3>
           <p class="text-lead">{{ site.description }}</p>
           
-          {% for item in site.badges %}
-          <a href="{{ item.link }}"><img style="height: 100px;" src="{{ item.img }}"></a>
-          {% endfor %}
+          <p class="pt-4">
+            {% for item in site.badges_soft %}
+              <a href="{{ item.link }}" target="_blank"><img style="height: 100px;" src="{{ item.img }}"></a>
+            {% endfor %}
+          </p>
+          <p class="pt-4">
+            {% for item in site.badges_hard %}
+              <a href="{{ item.link }}" target="_blank"><img style="height: 100px;" src="{{ item.img }}"></a>
+            {% endfor %}
+          </p>
         </div>
       </div>
     </div>
