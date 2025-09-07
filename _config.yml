@@ -27,14 +27,24 @@ badges:
     img:  "https://images.credly.com/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07_Practitioner.png"
 
   -
+    name: "Google Cloud Data Analytics Certificate"
+    link: "https://www.credly.com/badges/b97ebe5f-f46c-498b-975c-54e27044b3d8"
+    img:  "https://images.credly.com/size/340x340/images/f53c1eb6-d93d-4b9e-ae34-922046f6b15c/image.png"     
+
+  -
     name: "Google Cloud Computing Foundations Certificate"
     link: "https://www.credly.com/badges/634fe95e-e43f-4e03-bf96-b1747df8592b"
     img:  "https://images.credly.com/size/340x340/images/4dda8ae4-99ee-476c-bca3-6f0adbab42fe/image.png"     
+
+  -
+    name: "Python Essentials"
+    link: "https://www.credly.com/badges/10996d6e-7118-40db-a042-8766aa4bf4b5"
+    img:  "https://images.credly.com/size/340x340/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png"
+
   -
     name: "Python Essentials"
     link: "https://www.credly.com/badges/b090597d-6374-4afb-a259-33b85a138342"
     img:  "https://images.credly.com/size/340x340/images/3f802526-7274-4230-91ab-f6d1a35340e6/image.png"
-
 
   -
     name: "TeamOps Practitioner Certification"
