@@ -1,0 +1,35 @@
+# Site settings
+title: entrypoint.tech
+email: ola@linux.com
+description: >-
+  Data Analyst and Backend Developer (Python and SQL) passionate about turning complexity into clarity, through structured data, integration and automation, building robust tools, and solving complex challenges. I believe in writing clean, maintainable code that scales.
+baseurl: ""
+url: "https://entrypoint.tech"
+
+# Author information
+author:
+  name: Aleksandra Tarkowska
+  email: ola@linux.com
+  github: atarkowska
+  gitlab: atarkowska
+  linkedin: atarkowska
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
