@@ -1,16 +1,15 @@
 # Site settings
-title: knowhow.dev
-email: ola@entrypoint.tech
+title: olatarkowska.dev
+email: ola@linux.com
 description: >-
-  Data analyst and Python developer Specialising in workflow design and automation,
-  tools development and building efficient solutions to makes everyone's life easier.
+  Data Analyst and Backend Developer (Python and SQL) passionate about turning complexity into clarity, through structured data, integration and automation, building robust tools, and solving complex challenges. I believe in writing clean, maintainable code that scales.
 baseurl: ""
-url: "https://knowhow.dev"
+url: "https://olatarkowska.dev"
 
 # Author information
 author:
   name: Aleksandra Tarkowska
-  email: ola@entrypoint.tech
+  email: ola@linux.com
   github: atarkowska
   gitlab: atarkowska
   linkedin: atarkowska
