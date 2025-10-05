@@ -1,0 +1,35 @@
+# Site settings
+title: knowhow.dev
+email: ola@entrypoint.tech
+description: >-
+  Data analyst and Python developer Specialising in workflow design and automation,
+  tools development and building efficient solutions to makes everyone's life easier.
+baseurl: ""
+url: "https://knowhow.dev"
+
+# Author information
+author:
+  name: Aleksandra Tarkowska
+  email: ola@entrypoint.tech
+  github: atarkowska
+  linkedin: atarkowska
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
