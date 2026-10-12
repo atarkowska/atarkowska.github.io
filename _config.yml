@@ -33,3 +33,5 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
+chat_api_url: "https://quiet-marble-otter.trycloudflare.com/chat"
