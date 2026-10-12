@@ -2,7 +2,7 @@ name: Build and deploy Jekyll site
 
 on:
   push:
-    branches: [main]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -11,42 +11,49 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: ruby/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
-          bundler-cache: true        # runs bundle install and caches gems
+          ruby-version: "3.3.5"
+          bundler-cache: true
 
-      - id: pages
+      - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Write CI-only config (chat API URL from secret)
+      - name: Inject chat API URL
         env:
           CHAT_API_URL: ${{ secrets.CHAT_API_URL }}
-        run: printf 'chat_api_url: "%s"\n' "$CHAT_API_URL" > _config.ci.yml
+        run: |
+          if [ -n "$CHAT_API_URL" ]; then
+            printf '\nchat_api_url: "%s"\n' "$CHAT_API_URL" >> _config.yml
+          fi
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --config _config.yml,_config.ci.yml --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
-      - uses: actions/upload-pages-artifact@v4
-        # uploads ./_site by default
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     needs: build
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
