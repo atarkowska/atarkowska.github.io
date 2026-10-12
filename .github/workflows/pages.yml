@@ -1,0 +1,52 @@
+name: Build and deploy Jekyll site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true        # runs bundle install and caches gems
+
+      - id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Write CI-only config (chat API URL from secret)
+        env:
+          CHAT_API_URL: ${{ secrets.CHAT_API_URL }}
+        run: printf 'chat_api_url: "%s"\n' "$CHAT_API_URL" > _config.ci.yml
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --config _config.yml,_config.ci.yml --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - uses: actions/upload-pages-artifact@v4
+        # uploads ./_site by default
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
