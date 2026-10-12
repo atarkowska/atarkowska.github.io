@@ -1,9 +1,9 @@
-name: pages-build-deployment
+name: Deploy Jekyll site to Pages
 
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
+  workflow_dispatch:        # lets you re-run manually (e.g. after changing the secret)
 
 permissions:
   contents: read
@@ -21,28 +21,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.3.5"
-          bundler-cache: true
-
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Inject chat API URL
+      - name: Inject chat API URL from secret
         env:
           CHAT_API_URL: ${{ secrets.CHAT_API_URL }}
         run: |
-          if [ -n "$CHAT_API_URL" ]; then
-            printf '\nchat_api_url: "%s"\n' "$CHAT_API_URL" >> _config.yml
+          if [ -z "$CHAT_API_URL" ]; then
+            echo "::error::Repository secret CHAT_API_URL is not set"
+            exit 1
           fi
+          printf '\nchat_api_url: "%s"\n' "$CHAT_API_URL" >> _config.yml
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

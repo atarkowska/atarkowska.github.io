@@ -44,4 +44,5 @@ yarn-error.log*
 # Temporary files
 *.tmp
 *.bak
-*.cache
+*.cache_config.local.yml
+_config.local.yml
