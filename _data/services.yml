@@ -1,0 +1,15 @@
+- icon: bi-easel
+  title: Coaching and Training
+  text: 1:1 coaching for engineers and tech leads, plus hands-on team workshops tailored to your stack and skill level. Set clear goals, remove blockers and grow faster, working on real problems.
+
+- icon: bi-diagram-3
+  title: APIs and Data
+  text: Learn to design APIs, integrations and data pipelines/workflows, from architecture to monitoring and maintenance.
+
+- icon: bi-clipboard-check
+  title: Testing
+  text: Build confidence in every release with practical test strategies and automation that catch problems early, so your team can ship with confidence.
+
+- icon: bi-gear-wide-connected
+  title: Process Automation
+  text: Find the repetitive tasks worth automating and build solutions that save time and cut manual errors.
