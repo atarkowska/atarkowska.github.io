@@ -63,6 +63,7 @@ title: Technology Coach & Trainer
   </div>
 </section>
 
+
 <!-- SERVICES -->
 <section id="services" class="section">
   <div class="container">
@@ -112,8 +113,28 @@ title: Technology Coach & Trainer
   </div>
 </section>
 
+<!-- TESTIMONIAL -->
+<section id="testimonial" class="section">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Testimonial</h2>
+    <div class="row align-items-center g-4">
+	  {% for f in site.data.feedback %}
+	  <div class="col-lg-6 col-lg-3 text-center">
+		<div class="card service-card h-100">
+		  <div class="card-body p-4">
+  		    <i class="bi {{ f.icon }} feedback-icon"></i>
+		    <p class="mb-2 text-body-secondary">{{ f.text }}</p>
+	        <a href="{{ f.link }}" class="nav-link"><span class="accent">{{ f.organiser }}</span></a>
+		  </div>
+		</div>
+	  </div>
+	{% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
-<section id="contact" class="section">
+<section id="contact" class="section section-alt">
   <div class="container text-center">
     <h2 class="section-title mb-3"><span class="accent">Let's talk</span></h2>
     <p class="lead mb-4 mx-auto hero-sub">

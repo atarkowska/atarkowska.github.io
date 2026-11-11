@@ -75,7 +75,7 @@ body { background: var(--dark); color: #fff; }
 .section-alt { background: var(--dark-alt); }
 .section-title { font-weight: 700; }
 
-.avatar-placeholder {
+/*.avatar-placeholder {
   width: 260px;
   height: 260px;
   border-radius: 50%;
@@ -86,7 +86,7 @@ body { background: var(--dark); color: #fff; }
   font-size: 7rem;
   color: var(--accent);
   background: #1e1e1e;
-}
+}*/
 
 .avatar {
   width: 260px;
@@ -108,7 +108,8 @@ body { background: var(--dark); color: #fff; }
   transform: translateY(-6px);
   border-color: var(--accent);
 }
-.service-icon { font-size: 2.2rem; color: var(--accent); }
+.service-icon,
+.feedback-icon { font-size: 2.2rem; color: var(--accent); }
 
 .step-number {
   width: 56px;
