@@ -1,36 +1,19 @@
-# Site settings
 title: entrypoint.tech
-email: ola@linux.com
-description: >-
-  Data Analyst and Backend Developer (Python and SQL) passionate about turning complexity into clarity, through structured data, integration and automation, building robust tools, and solving complex challenges. I believe in writing clean, maintainable code that scales.
+description: Technology coaching and training that turns complexity into clarity.
+url: https://entrypoint.tech
 baseurl: ""
-url: "https://entrypoint.tech"
 
-# Author information
 author:
-  name: Aleksandra Tarkowska
-  email: ola@linux.com
-  github: atarkowska
-  gitlab: atarkowska
-  linkedin: atarkowska
+  name: Ola Tarkowska
+  email: ask@entrypoint.tech
+  linkedin: https://www.linkedin.com/in/atarkowska
+  github: https://github.com/atarkowska
 
-# Build settings
-markdown: kramdown
-theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor
-
+  - README.md

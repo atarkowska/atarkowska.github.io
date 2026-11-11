@@ -1,0 +1,15 @@
+- icon: bi-person-check
+  title: 1:1 Technology Coaching
+  text: Personal guidance for engineers and tech leads. Set goals, remove blockers and grow faster with regular, focused sessions.
+
+- icon: bi-easel
+  title: Team Training
+  text: Hands-on workshops tailored to your stack and your team's level, built around real problems instead of slides.
+
+- icon: bi-diagram-3
+  title: Data Integration & Workflows
+  text: Learn to design reliable integrations, pipelines and workflows, from architecture to monitoring and maintenance.
+
+- icon: bi-robot
+  title: Intelligent Automation
+  text: Find the repetitive work worth automating and build solutions with scripting, APIs and AI tools.
