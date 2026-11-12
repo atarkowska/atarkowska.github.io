@@ -116,19 +116,35 @@ title: Technology Coach & Trainer
 <!-- TESTIMONIAL -->
 <section id="testimonial" class="section">
   <div class="container">
-    <h2 class="section-title text-center mb-5">Testimonial</h2>
-    <div class="row align-items-center g-4">
-	  {% for f in site.data.feedback %}
-	  <div class="col-lg-6 col-lg-3 text-center">
-		<div class="card service-card h-100">
-		  <div class="card-body p-4">
-  		    <i class="bi {{ f.icon }} feedback-icon"></i>
-		    <p class="mb-2 text-body-secondary">&rdquo;{{ f.text }}&rdquo;</p>
-	        <a href="{{ f.link }}" class="nav-link"><span class="accent">{{ f.organiser }}</span></a>
-		  </div>
-		</div>
-	  </div>
-	{% endfor %}
+    <h2 class="section-title text-center mb-2">What <span class="accent">organisers</span> say</h2>
+    <p class="text-center text-body-secondary mb-5">Feedback from events and communities I've worked with.</p>
+    <div class="row justify-content-center g-4">
+      {% for f in site.data.feedback %}
+      <div class="col-md-10 col-lg-6">
+        <figure class="card service-card testimonial-card h-100 mb-0">
+          <div class="card-body p-4 p-lg-5 d-flex flex-column">
+            <i class="bi bi-quote testimonial-quote" aria-hidden="true"></i>
+            <blockquote class="testimonial-text mb-4">{{ f.text }}</blockquote>
+            <figcaption class="mt-auto">
+              {% if f.link and f.link != "" %}
+              <a href="{{ f.link }}" class="testimonial-author" target="_blank" rel="noopener">{{ f.organiser }}<i class="bi bi-box-arrow-up-right ms-2 small"></i></a>
+              {% else %}
+              <span class="testimonial-author">{{ f.organiser }}</span>
+              {% endif %}
+            </figcaption>
+          </div>
+        </figure>
+      </div>
+      {% endfor %}
+      <div class="col-md-10 col-lg-6">
+        <div class="card testimonial-card testimonial-cta h-100">
+          <div class="card-body p-4 p-lg-5 d-flex flex-column justify-content-center align-items-center text-center">
+            <h3 class="h4 mb-2">Your event could be next</h3>
+            <p class="text-body-secondary mb-4">Looking for a speaker, workshop or training for your community?</p>
+            <a href="#contact" class="btn btn-accent">Get in touch</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
